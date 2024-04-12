@@ -5,7 +5,7 @@ from os.path import abspath, join, dirname
 load_dotenv(abspath(join(dirname(__file__), "../.env")))
 
 # CONSTANTS
-SLEEP_TIMER_AVG = 3
+SLEEP_TIMER_AVG = 8
 
 # LOAD ENVIRONMENT VARIABLES
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID")
@@ -28,6 +28,7 @@ SPOTIFY_ITEMS_FOLDER_NAME = "items"
 SPOTIFY_MAPPING_FILE_NAME = "mapping.json"
 SPOTIFY_API_URL = "https://api.spotify.com/v1"
 SPOTIFY_DATA_PATH = abspath(join(DATA_PATH, 'spotify'))
+DB_CSV_PATH = join(DATA_PATH, 'db/csv')
 
 # DEFINE MUSICBRAINZ CONSTANTS
 MUSICBRAINZ_DATA_PATH = abspath(join(DATA_PATH, 'musicbrainz'))
