@@ -18,9 +18,10 @@ create (a: Audio {
     spotify_id:row.spotify_id,
     uri:row.uri,
     href:row.href,
-    external_url:row.external_url,
-    explicit: toBoolean(row.explicit)
-});
+    external_url:row.external_url
+    
+})
+set a.explicit = case when row.explicit <> 0 then True else False end;
 
 create index Audio_audio_id if not exists for (a:Audio) on (a.audio_id);
 
