@@ -5,7 +5,12 @@ Please install Neo4j database.
 
 In order to run this project, you need access to download the csv data to be loaded in a Neo4j database.
 
-Please find the `csv.zip` data here: https://drive.google.com/drive/folders/1Ua_iiOlFZQQAFr-20o6xYCsIdQ52Tt4K?usp=sharing
+Please find the `csv.zip` data in the submission box or from the link below: </br>
+https://drive.google.com/drive/folders/1Ua_iiOlFZQQAFr-20o6xYCsIdQ52Tt4K?usp=drive_link
+ 
+
+**Since the csvs are compressed, the total size is smaller. However
+when uncompressed and loaded in the database, the total data size is roughly 280 Mb**
 
 Once the data is downloaded, put all the csv files in the import folder of the Neo4j database.
 
