@@ -38,7 +38,7 @@ create index audiobook_explicit_chapters for (b:Audiobook) on (b.total_chapters,
 // 53ms with index
 // note this index already exists in the loader.cypher, therefore it must be dropped before attempting tests 
 // without index.
-create index artist_artist_id for (a:Artist) on (a.artist_id);
+// create index artist_artist_id for (a:Artist) on (a.artist_id);
 
 // 6. Demonstrate a full text search. Show the performance improvement by using indexes.
 // query takes 169ms
