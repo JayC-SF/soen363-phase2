@@ -79,7 +79,7 @@ if __name__ == '__main__':
     parser.add_argument('-ml', '--generate-musicbrainz-aliases-json', help=f'Fetch MusicBrainz API for every artist name', action='store_true')
     parser.add_argument('-o', '--load-authors-from-audiobooks', help=f'Loads authors from audiobooks', action='store_true')
     parser.add_argument('-c', '--load-chapters-from-audiobooks', help=f'Loads chapters from audiobooks', action='store_true')
-    parser.add_argument('-d', '--db-to-csv', help=f'Converts the database to csv files', action='store_true')
+    parser.add_argument('-s', '--db-to-csv', help=f'Converts the database to csv files', action='store_true')
     subparsers = parser.add_subparsers(dest='command', help='Sub-command help')
     insert_parser = subparsers.add_parser('insert-to-database', help='Insert data to the database')
     insert_parser.add_argument('-l', '--list', help='Show the list of possible data choices', action='store_true')
